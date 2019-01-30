@@ -3,10 +3,14 @@
   <title>A+J Wedding RSVP</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300|Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-
-  
       <link rel="stylesheet" href="css/rsvpstyle.css">
-
+	<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+	<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+	<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+	<link href="/site.webmanifest" rel="manifest">
+	<link href="/safari-pinned-tab.svg" rel="mask-icon">
+	<meta content="#da532c" name="msapplication-TileColor">
+	<meta content="#ffffff" name="theme-color">
 <script>
 var Webflow = Webflow || [];
 function getParam(name) { name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); var regex = new RegExp("[\\?&]" + name + "=([^&#]*)", 'i'), results = regex.exec(location.search); return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")); }
@@ -165,9 +169,9 @@ $('#form').submit(function (event) {
         error: function () {
             // Submit of form should be successful but JSONP callback will fail because Google Forms
             // does not support it, so this is handled as a failure.
-            //alert('Form Submitted. Thanks.')
+            alert('Form Submitted. Thanks.')
             // You can also redirect the user to a custom thank-you page:
-            window.location = '	Submitted-Thank%20You.html'
+            window.location = 'index.html'
         }
     })
 })</script>
