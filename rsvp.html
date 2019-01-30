@@ -1,0 +1,175 @@
+<html lang="en" class="webflow-loaded"><head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width">
+  <title>A+J Wedding RSVP</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300|Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+  
+      <link rel="stylesheet" href="css/rsvpstyle.css">
+
+<script>
+var Webflow = Webflow || [];
+function getParam(name) { name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); var regex = new RegExp("[\\?&]" + name + "=([^&#]*)", 'i'), results = regex.exec(location.search); return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")); }
+</script>
+
+</head>   
+<body>  
+    	
+
+      
+        <!-- Main Email Body : BEGIN -->
+        <div class="wrapper">
+
+    <!-- TITLE YOUR FORM -->
+    
+  </div><table border="0" width="100%" cellpadding="0" cellspacing="0">
+
+
+          <!-- Full Width, Fluid Column : BEGIN -->
+          <tbody><tr>
+            <td style="padding: 0%; font-family: sans-serif; font-size: 18px; line-height: 1.3; color: #666666;"> <header>
+    
+ 
+
+
+
+	
+</header>   
+<h1><img src="/Users/jonathanhinterberger/Downloads/rsvp.gif" width="auto" height="30%" alt="RSVP" border="0"></h1>  
+<h2>Let Arielle and Jonathan know your plans.</h2>
+</td>
+          </tr>
+          
+      		
+      		  
+          
+      		
+				
+      		
+      		
+          
+      		
+      		
+          
+      		
+      		
+
+          
+          <tr>
+            <td width="92%" style="padding: 2%;">
+							<section>
+  <div class="wrapper">
+    <!-- START CODING YOUR FORM -->
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdudvag0fjHrGs9CFQseqnqRJhHpk8xfIW9WGDK3jPOPe_EuQ/formResponse" id="form" target="_Self" autocomplete="on">
+
+<input name="entry.252125714" type="hidden" id="email">
+
+<label for="explain">Name(s)</label>
+	<input type="text" id="Name" name="entry.1432148902" required="">
+
+      <!-- MUTLIPLE CHOICE -->
+      <label for="explain">Will you be attending the wedding &amp; reception?</label>
+      <div class="input-wrap"><input type="radio" name="entry.877086558" id="e1" required="" value="Yes">
+      <label for="e1">Yes, can't wait!</label></div>
+      <div class="input-wrap"><input type="radio" name="entry.877086558" id="e2" value="No">
+      <label for="e2">Regretfully, no.</label></div>
+
+     
+      <!-- DATE INPUT -->
+      <label for="explain">When will you be arriving in town? <i>(optional)</i></label>
+      <input name="entry.1498135098" type="date">
+      
+
+ <label for="comfort">Please let us know if you have any allergies or accessibility concerns.</label>
+      <input name="entry.1424661284" type="text" id="concerns">
+
+      <!-- DROPDOWN -->
+      <p>Do you have any dietary restrictions?</p>
+      <div class="input-wrap select-box">
+        <select name="entry.1547304865">
+          <option selected="" disabled="">Choose</option>
+          <option value="Vegetarian">Vegetarian</option>
+          <option value="Vegan">Vegan</option>
+          <option value="Kosher">Kosher</option>
+          <option value="Gluten-free">Gluten-free</option>
+          <option value="None">None</option>
+          <option value="Other">Other - See Notes Below</option>
+        </select>
+      </div>
+
+      <!-- SINGLE LINE TEXT FIELD -->
+      <label for="comfort">Let us know if you have a favorite song to add to the playlist.</label>
+      <input name="entry.1236179352" type="text" id="song">
+
+      <!-- MULTI-LINE TEXT FIELD -->
+      <label for="explain">Anything else we should know?</label>
+      <textarea name="entry.2606285" id="notes"></textarea>
+
+
+      <!-- SUBMIT BUTTON -->
+      <input class="button" type="submit" value="Submit">
+                                                           
+      </form>
+  </div>
+
+
+
+<table cellspacing="0" cellpadding="50" border="0" width="90%">
+								<tbody><tr>
+                               
+
+</tr></tbody></table></section></td></tr></tbody></table>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><script src="https://uploads-ssl.webflow.com/5645ec632404c4fe414daa63/js/samliew.5d53f7da2.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script><script>
+Webflow.push(function() {
+ 
+  // Make all heading text in rich-text components have a linkable ID if it doesn't have one
+  $('h1,h2,h3,h4,h5,h6', '.w-richtext').each(function() {
+    if(!$(this).not('[id]')) return;
+    $(this).attr('id', $(this).text().toLowerCase().replace(/[^a-z\s]+/g, ' ').replace(/^\s+|\s+$/g, '').replace(/\s+/g, '-'));
+  });
+  
+  // Auto-populate form fields based on query string
+  $('input:text, input[type=hidden], input[type=email]').each(function() {
+    var paramValue = getParam(this.id.toLowerCase());
+    if(this.value == "" && paramValue != "") this.value = paramValue;
+  });
+  
+  
+  // FOUC fix
+  $('html').addClass('webflow-loaded');
+});
+
+$('#form').submit(function (event) {
+    event.preventDefault()
+    var extraData = {}
+    {
+        /* Parsing input date id=1498135098 */
+        var dateField = $("#1498135098_date").val()
+        var timeField = $("#1498135098_time").val()
+        let d = new Date(dateField)
+        if (!isNaN(d.getTime())) {
+            extraData["entry.1498135098_year"] = d.getFullYear()
+            extraData["entry.1498135098_month"] = d.getMonth() + 1
+            extraData["entry.1498135098_day"] = d.getUTCDate()
+        }
+        if (timeField && timeField.split(':').length >= 2) {
+            let values = timeField.split(':')
+            extraData["entry.1498135098_hour"] = values[0]
+            extraData["entry.1498135098_minute"] = values[1]
+        }
+    }
+    $('#form').ajaxSubmit({
+        data: extraData,
+        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+        error: function () {
+            // Submit of form should be successful but JSONP callback will fail because Google Forms
+            // does not support it, so this is handled as a failure.
+            //alert('Form Submitted. Thanks.')
+            // You can also redirect the user to a custom thank-you page:
+            window.location = '	Submitted-Thank%20You.html'
+        }
+    })
+})</script>
+
+</body></html>

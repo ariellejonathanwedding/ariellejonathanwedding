@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Thank you!</title>
+<style>
+body {
+    background-color:white;
+    background-size: contain;
+}
+h1, div {
+    color: white; 
+    text-align: center;
+}
+.blur-bgimage {
+    overflow: hidden;
+    text-align: left;
+}
+.blur-bgimage:before {
+    content: "";
+    position: absolute;
+    width : 100%;
+    height: 100%;
+    background: url('http://i0.kym-cdn.com/photos/images/original/000/051/726/17-i-lol.jpg?1318992465');
+     background-repeat: no-repeat;
+     z-index: -1;
+    
+           -webkit-filter: blur(10px) invert(100%);
+            filter: blur(10px) invert(100%);
+    
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            
+
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+}        
+         @-webkit-keyframes fadeIn {
+            0% {opacity: 0.00;}
+            100% {opacity: 1.00;}
+         }
+         
+         @keyframes fadeIn {
+            0% {opacity: 0.00;}
+            100% {opacity: 1.00;}
+         }
+
+</style>
+</head><body class="blur-bgimage">
+
+    <h1>Title</h1>
+    <div >Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </div>
+</body>

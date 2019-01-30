@@ -1,0 +1,110 @@
+/* Styles for page */
+.container {
+  width: 70%;
+  margin: 50px auto;
+  background-color: #bd9dab;
+  box-shadow: 0 70px 100px -25px #333;
+}
+
+body {
+  color: #ffffff;
+  font-family: sans-serif;
+  background-color: #fbe9eb;
+  background-image: linear-gradient(to bottom, #fffefe 0%, #fbe9eb 3%, #ffecef 100%);
+}
+body a {
+  cursor: pointer;
+  color: #fdfaf5;
+  
+}
+body section {
+  /* margin-bottom: 90px; */
+  font-family: palatino, times, serif;
+  line-height: 30px;
+  color: #8c7973;
+  /* font-weight: normal; */
+  font-style: = oblique;
+  /* letter-spacing: 7px; */
+  text-shadow: 20px 0 20px #c5c5c5;
+}
+body section h1 {
+  /* text-transform: uppercase; */
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 7px;
+  font-size: 25px;
+  line-height: 1.5;
+  /* color: #4c4c4c; */
+}
+body section p, body section a {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+span {
+  letter-spacing: 0px;
+}
+
+p {
+  font-weight: 200;
+  line-height: 1.5;
+  font-size: 16px;
+  
+}
+
+/* Styles for Accordion */
+.toggle:last-child {
+  border-bottom: 1px solid #dddddd;
+}
+.toggle .toggle-title {
+  position: relative;
+  display: block;
+  border-top: 1px solid #dddddd;
+  margin-bottom: 6px;
+}
+.toggle .toggle-title h3 {
+  font-size: 20px;
+  margin: 0px;
+  line-height: 1;
+  cursor: pointer;
+  font-weight: 200;
+}
+.toggle .toggle-inner {
+  padding: 7px 25px 10px 25px;
+  display: none;
+  margin: -7px 0 6px;
+  background-color: #ad8a99;
+}
+.toggle .toggle-inner div {
+  max-width: 100%;
+}
+.toggle .toggle-title .title-name {
+  display: block;
+  padding: 25px 25px 14px;
+}
+.toggle .toggle-title a i {
+  font-size: 22px;
+  margin-right: 5px;
+}
+.toggle .toggle-title i {
+  position: absolute;
+  transition: all 0.5s ease;
+  top: 50%;
+  right: 1em;
+}
+
+.toggle .toggle-title i,
+.toogle .toggle-title.active i {
+     content: "+";
+   font-size:1.5em;
+   line-height:0.5em;
+   color: red;
+      transition: transform 0.3s ease-in-out;
+}
+.toggle .toggle-title.active i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
+  transition: all 0.5s ease;
+}

@@ -1,0 +1,112 @@
+/* Styles for page */
+.container {
+  width: 70%;
+  min-width: 325px; 
+  margin: 50px auto;
+  background-color: #f4f6ff;
+  box-shadow: 0 70px 100px -25px #9197b3;
+}
+
+.main {
+  margin: 4% 10% 10%;
+  text-align: left;
+  font-weight: normal;
+  font-size: 14px;
+  color: #4c4c4c;
+ }
+
+    .button-td,
+    .button-a {
+        transition: all 100ms ease-in;
+    }
+    .button-td-primary:hover,
+    .button-a-primary:hover,
+    .button-a-secondary:hover {
+        background: #273984 !important;
+        border-color: #555555 !important;
+}
+	.button-a-primary{
+	background: #419ade;
+	color: #ebedf5;
+}
+	.button-a-secondary {
+	background: #2883c8;
+	color: #ffffff;
+}
+	.button-a-primary,
+	.button-a-secondary {
+	border: 1px solid #f4f5f7;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 14px 27px;
+	display: block;
+	border-radius: 4px;
+}
+   .dotted-line {
+        height: 20px;
+        background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="25" fill="#dee8f8"/></svg>');
+        background-repeat: repeat-x;
+        background-position: center;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+}
+body {
+  color: #ffffff;
+  font-family: sans-serif;
+  background-color: #dee8f8;
+  background-image: linear-gradient(to bottom, #fffefe 0%, #e9f1fb 3%, #d1ddf3 100%);
+}
+body a {
+  cursor: pointer;
+  color: #000;
+  
+}
+body section {
+  font-family: palatino, times, serif;
+  line-height: 30px;
+  color: #8c7973;
+  font-weight: normal;
+  font-style: = oblique;
+}
+header {
+  margin:10% 10% 0;
+  }
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  font-size: 2.5vw;
+  line-height: 1.5;
+  color: #4c4c4c;
+}
+@media screen and (min-width: 1000px) {
+  h1 {
+     font-size: 25px
+	}
+}
+h2 {
+  text-align: left;
+  font-weight: 300;
+  font-size: 22px;
+body section p, body section a {
+  text-align: center;
+  letter-spacing: 3px;
+  
+}
+
+span {
+  letter-spacing: 0px;
+}
+
+p {
+  font-weight: 200;
+  line-height: 1.5;
+  font-size: 16px;
+  
+}
