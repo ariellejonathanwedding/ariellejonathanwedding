@@ -1,15 +1,6 @@
 ﻿<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head>
-	<meta charset="UTF-8" content="width=device-width" name="viewport">
-	<title>RSVP Reminder - Arielle & Jonathan's Wedding</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
-	<link href="css/donatestyle.css" rel="stylesheet">
-	<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-	<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-	<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-	<link href="/site.webmanifest" rel="manifest">
-	<link href="/safari-pinned-tab.svg" rel="mask-icon">
-	<meta content="#da532c" name="msapplication-TileColor">
-	<meta content="#ffffff" name="theme-color">
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
     <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
     <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
@@ -253,7 +244,7 @@ The email background color (#222222) is defined in three places:
                 <!-- Hero Image, Flush : BEGIN -->
                 <tr>
                     <td style="background-color: #ffffff;">
-                        <img src="https://drive.google.com/uc?export=download&amp;id=1FYqyHxTKy467rJoelXCLxHclf-xL8U9u" width="600" height="" alt="Image of A&amp;J Holding Hands" border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto;" class="g-img" https:="" drive.google.com="">
+                        <img src="https://drive.google.com/uc?export=download&amp;id=1FYqyHxTKy467rJoelXCLxHclf-xL8U9u" width="600" height="" alt="Image of A&amp;J Holding Hands" border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto;">
                     </td>
                 </tr>
                 <!-- Hero Image, Flush : END -->
@@ -261,7 +252,7 @@ The email background color (#222222) is defined in three places:
 
                             <tr>
                                 <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                    <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">Friends and family,</h2>
+                                    <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">Hi {{name}},</h2>
                                    
                                     <p style="margin: 0;">We just wanted to touch base and remind you that our wedding is coming up on May 4, 2019. We’d love to see you there! If you can’t make it, we totally understand; just let us know. The RSVP deadline is coming up on March 1, 2019. 
 </p>
@@ -288,7 +279,7 @@ The email background color (#222222) is defined in three places:
                                     <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                                         <tbody><tr>
                                             <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-     <a class="button-a button-a-primary" href="rsvp.html" target="_blank" style="background: #7d838e;border: 1px solid #f4f5f7;font-family: Arial, Helvetica, sans-serif;font-size: 25px;line-height: 25px;text-decoration: none;padding: 18px 20px;color: #ebedf5;display: block;border-radius: 4px;">RSVP</a>
+     <a class="button-a button-a-primary" {{link}} target="_blank" style="background: #7d838e;border: 1px solid #f4f5f7;font-family: Arial, Helvetica, sans-serif;font-size: 25px;line-height: 25px;text-decoration: none;padding: 18px 20px;color: #ebedf5;display: block;border-radius: 4px;">RSVP</a>
 </td>
                                         </tr>
                                     </tbody></table>
@@ -331,7 +322,7 @@ The email background color (#222222) is defined in three places:
                                 <td style="padding: 5px 20px 20px;font-family: sans-serif;font-size: 15px;line-height: 20px;color: #374c42;text-align: center;">
                                     
                                     
-<p style="margin: 0">If you have any questions, check out <b><a href="index.html">our FAQ page.</a></b><br>Or simply send us an email at: <a href="mailto:ariellejonathanwedding@gmail.com?subject=Question%20For%20You&amp;body=Hey%21%20I%20have%20a%20question.&#10;    " target="_top">ariellejonathanwedding@gmail.com</a>
+<p style="margin: 0">If you have any questions, check out {{FAQurl}} <br>Or simply reply to this email! 
 <br><br>
 Love,
 Arielle &amp; Jon</p>
@@ -368,7 +359,7 @@ Arielle &amp; Jon</p>
                 <tbody><tr>
                     <td style="padding: 20px; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #888888;">
                        
-                        <a style="color: #cccccc; text-decoration: underline; font-weight: bold;">You are viewing the web version.</a><br>
+                        <a {{webvlink}} style="color: #cccccc; text-decoration: underline; font-weight: bold;">View as a Web Page</a><br>
                         
                        
                     </td>
